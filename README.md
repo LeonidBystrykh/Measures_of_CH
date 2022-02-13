@@ -13,3 +13,7 @@ Dr. Leonid Bystrykh1,*, Dr. Mirjam Belderbos2
 Dr. Leonid Bystrykh
 l.bystrykh@umcg.nl
 ![image](https://user-images.githubusercontent.com/61867756/153745176-0cef6f67-3317-4764-9467-1fef10d7cbc2.png)
+
+Currently we upload the script, which illustrates how we made all figures in the manuscript. This is in *all_figures.R*.
+To explain better what is shown in the fig1A we made one extra script *fig1A_only.R*. 
+The replication of the regression modelling results is given in the python script 
