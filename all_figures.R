@@ -1,6 +1,8 @@
 #This script generates all figures for the manuscript
 #Some figures are replicated multiple times as different versions
-#Note that the basic settings remain the same through all figures
+#Exact figure in the script might differ in details from the publication
+#due to extra editing steps and adaptations
+#Note that the basic settings for the data series remain the same through all figures
 # By L.Bystrykh Feb 2022
 
 library(plotly) #for interactive 3D
