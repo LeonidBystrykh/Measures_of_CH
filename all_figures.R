@@ -19,7 +19,7 @@ library(ggplot2) #for ggplot type heatmap
 ####check dbeta function for any selected alpha and beta values----
 # dbeta function is probability density function
 # it gives a shape of the distribution, not the values
-span<-seq(0,1,length.out=100) #number of points in the series
+span<-seq(0.01,1,length.out=100) #number of points in the series
 plot(span,dbeta(span,10,10), "l", 
      xlab="Values",
      ylab="Probability density") #span, alpha and beta
@@ -28,8 +28,8 @@ plot(span,dbeta(span,10,10), "l",
 #Prepare coordinates for 3D using mesh:
 M<-mesh(seq(1,20,length.out=20),
         seq(0,1,length.out=20))
-x<-M$y
-y<-M$x
+series=M$x
+size=M$y
 #Make a series of beta distributions with increasing alpha and decreasing beta
 # the sizes of the series are the same as numbers of the series to keep figure square shape
 z=c()
@@ -37,15 +37,13 @@ for (i in 1:20){
   z=rbind(z,dbeta(seq(0,1,length.out=20),i,21-i))
 }
 ####This is static version of the data----
-surf3D(x, y, z, colvar = z, colkey = TRUE, 
+surf3D(size, series, z, colvar = z, colkey = TRUE, 
        box = TRUE, bty = "b", phi = 35, theta = 105)
 
 ####This plot is interactive----
 # more options in https://plotly.com/r/figure-labels/
-data<-x
-series<-y
-density<-z
-fig1A<-plot_ly(x = ~data, y = ~series, z = ~density) %>% 
+
+fig1A<-plot_ly(x = ~size, y = ~series, z = ~density) %>% 
   add_surface() %>%
   layout(title = 'Probability density')
 fig1A
