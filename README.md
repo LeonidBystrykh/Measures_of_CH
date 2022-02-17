@@ -13,6 +13,13 @@ Corresponding author:
 Dr. Leonid Bystrykh
 l.bystrykh@umcg.nl, l.bystrykh@rug.nl
 
-Currently we upload the script, which illustrates how we made all figures in the manuscript. This is in *all_figures.R*.
-To explain better what is shown in the fig1A we made one extra script *fig1A_only.R*. 
-The replication of the regression modelling results is given in the python script 
+Currently we upload the script, which illustrates how we made all figures in the manuscript. This is in *All_figures.R*.
+
+To explain better what is shown in the fig1A we made one extra script *Figure 1A.R*.
+
+What if we change a threshold for the Ich is illustrated in *Ich_thresholds*
+
+The replication of the regression modelling results is given in the python script *Sim_iterations*
+
+Note that each script is in two formats, one is script only, other is presentation format (pdf or html)
+
