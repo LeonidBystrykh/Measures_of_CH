@@ -13,9 +13,9 @@ Corresponding author:
 Dr. Leonid Bystrykh
 l.bystrykh@umcg.nl, l.bystrykh@rug.nl
 
-Currently we upload the script, which illustrates how we made all figures in the manuscript. This is in *All_figures.R*.
+Currently we upload the script, which illustrates how we made all figures in the manuscript. This is in *All_figures*.
 
-To explain better what is shown in the fig1A we made one extra script *Figure 1A.R*.
+To explain better what is shown in the fig1A we made one extra script *Figure 1A*.
 
 What if we change a threshold for the Ich is illustrated in *Ich_thresholds*
 
